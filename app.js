@@ -1,7 +1,7 @@
-const { urlencoded } = require('express');
 const express = require('express');
 const mongoose = require('mongoose');
 const Uri = require('./dbURI/Uri');
+const uploadRoutes = require('./routes/uploadRoute');
 
 const app = express();
 
@@ -20,3 +20,4 @@ mongoose.connect(dbURI)
 
 // routes
 app.get('/', (req, res) => res.render('home'));
+app.use(uploadRoutes)

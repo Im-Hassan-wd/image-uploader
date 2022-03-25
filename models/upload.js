@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
 const uploadSchema =  mongoose.Schema({
+  name: {
+    type: String
+  },
   avatarUrl: {
     type: String
   }
