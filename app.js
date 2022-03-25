@@ -19,4 +19,3 @@ mongoose.connect(dbURI)
 
 // routes
 app.get('/', (req, res) => res.render('home'));
-app.get('/upload', (req, res) => res.render('upload'));
