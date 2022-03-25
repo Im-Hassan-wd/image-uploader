@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   font-family: "Quicksand", sans-serif;
-}
-body {
-  margin: 20px 40px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background: #fafafa;
+  color: #2222;
 }
