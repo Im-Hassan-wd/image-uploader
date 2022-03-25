@@ -8,7 +8,6 @@ const app = express();
 // middleware
 app.use(express.static('public'));
 app.use(express.json());
-app.use(urlencoded);
 
 // view engine
 app.set('view engine', 'ejs');
