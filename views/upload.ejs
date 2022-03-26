@@ -23,6 +23,10 @@
 
     <script>
       const select = document.querySelector('input[type="file"]');
+
+      select.addEventListener('click', (e) => {
+        console.log(select.value);
+      });
     </script>
 </body>
 </html>
