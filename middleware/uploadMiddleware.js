@@ -10,3 +10,15 @@ const storage = multer.diskStorage({
    cb(null, Date.now() + ext);
  }
 });
+
+const upload = multer({
+  storage: storage,
+  fileFilter: function(req, file, cb){
+    if(file.mimetupe == 'image/png' || file.mimetupe == 'image/jpg') {
+      cb(null, true)
+    } else {
+       console.log('only jpg & png file supported');
+       cb(null, false)
+    }
+  }
+})
