@@ -13,9 +13,21 @@ body {
   color: #444;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 10px;
+}
+
 .uploader {
   width: 360px;
-  margin: 0 auto;
+  margin: 10% auto;
   padding: 30px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
@@ -25,7 +37,7 @@ body {
 
 .image-preview {
   border: 1px dashed #97bef4;
-  padding: 15px 20px;
+  padding: 25px 15px;
 }
 
 input[type="file"] {
