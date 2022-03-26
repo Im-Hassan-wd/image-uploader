@@ -5,5 +5,5 @@ module.exports.upload_get = (req, res) => {
 }
 
 module.exports.upload_post = (req, res) => {
-  res.send('new upload');
+  console.log(req.body);
 }
