@@ -20,4 +20,4 @@ mongoose.connect(dbURI)
 
 // routes
 app.get('/', (req, res) => res.redirect('/upload'));
-app.use(uploadRoutes)
+app.use(uploadRoutes);

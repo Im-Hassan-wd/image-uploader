@@ -23,6 +23,11 @@ body {
   text-align: center;
 }
 
+.image-preview {
+  border: 1px dashed #97bef4;
+  padding: 15px 20px;
+}
+
 input[type="file"] {
   display: none;
 }
