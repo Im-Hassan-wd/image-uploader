@@ -20,5 +20,10 @@ const upload = multer({
        console.log('only jpg & png file supported');
        cb(null, false)
     }
+  },
+  limits: {
+    fileSize: 1024 * 1024 * 3
   }
-})
+});
+
+module.exports = upload;
