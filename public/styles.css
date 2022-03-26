@@ -22,3 +22,7 @@ body {
   background: #fff;
   text-align: center;
 }
+
+input[type="file"] {
+  background: #2f80ed;
+}
