@@ -5,5 +5,7 @@ module.exports.upload_get = (req, res) => {
 }
 
 module.exports.upload_post = (req, res) => {
-  console.log(req.body);
+  const blog = new Upload({
+    avatarUrl: req.body.avatarUrl
+  });
 }
