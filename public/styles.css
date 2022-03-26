@@ -23,13 +23,14 @@ body {
   text-align: center;
 }
 
-.select input[type="file"] {
-  /* display: none; */
+input[type="file"] {
+  display: none;
 }
 
-.select label {
+label {
   background: #2f80ed;
   color: #fff;
   padding: 5px 10px;
   border-radius: 7px;
+  cursor: pointer;
 }
