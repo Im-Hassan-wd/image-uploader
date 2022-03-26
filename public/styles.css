@@ -44,6 +44,11 @@ input[type="file"] {
   display: none;
 }
 
+.small {
+  margin: 20px 0;
+  font-size: 13px;
+}
+
 label {
   background: #2f80ed;
   color: #fff;
