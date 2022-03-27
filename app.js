@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const Uri = require('./dbURI/Uri');
 const uploadRoutes = require('./routes/uploadRoute');
 

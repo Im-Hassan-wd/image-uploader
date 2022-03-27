@@ -3,7 +3,7 @@ const multer = require('multer');
 
 const storage = multer.diskStorage({
  destination: function(req, file, cb) {
-   cb(null, 'wick/uploads/');
+   cb(null, 'uploads/');
  },
  filename: function(req, file, cb) {
    let ext = path.extname(file.originalname);
@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
 const upload = multer({
   storage: storage,
   fileFilter: function(req, file, cb){
-    if(file.mimetupe == 'image/png' || file.mimetupe == 'image/jpg') {
+    if(file.mimetype == 'image/png' || file.mimetype == 'image/jpg') {
       cb(null, true)
     } else {
        console.log('only jpg & png file supported');

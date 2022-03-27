@@ -6,17 +6,19 @@ module.exports.upload_get = (req, res) => {
 }
 
 module.exports.upload_post = (req, res) => {
-  const upload = new Upload({
-    avatarUrl: req.body.avatarUrl
-  })
   if(req.body.avatarUrl) {
-  }
-  upload.save()
-   .then((result) => {
-     console.log(result);
+    const upload = new Upload({
+      avatarUrl: req.body.avatarUrl
     })
-   .catch(err => {
-     console.log(err)
-   })
+  
+    upload.save()
+    .then((result) => {
+      console.log('uploaded');
+      })
+    .catch(err => {
+      console.log(err)
+    })
+    console.log(req.file);
+  }
 
 }
