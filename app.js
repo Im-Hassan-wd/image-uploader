@@ -9,8 +9,7 @@ const app = express();
 // middleware
 app.use(express.static('public'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
-app.use(bodyParser({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // view engine
 app.set('view engine', 'ejs');

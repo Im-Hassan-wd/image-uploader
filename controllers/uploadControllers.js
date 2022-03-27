@@ -6,16 +6,16 @@ module.exports.upload_get = (req, res) => {
 }
 
 module.exports.upload_post = (req, res) => {
-  console.log(req.body.avatarUrl)
-  if(req.body.avatarUrl) {
+  if(req.file.path) {
     const upload = new Upload({
-      avatarUrl: req.body.avatarUrl
+      avatarUrl: req.file.path
     })
   
     upload.save()
+    // res.render('loading');
     .then((result) => {
       console.log('uploaded');
-      res.rediect('/');
+      res.redirect('/');
       })
     .catch(err => {
       console.log(err)
