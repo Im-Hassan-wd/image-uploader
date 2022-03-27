@@ -12,7 +12,6 @@ module.exports.upload_post = (req, res) => {
     })
   
     upload.save()
-    // res.render('loading');
     .then((result) => {
       console.log('uploaded');
       res.redirect('/');
