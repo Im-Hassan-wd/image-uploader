@@ -6,6 +6,7 @@ module.exports.upload_get = (req, res) => {
 }
 
 module.exports.upload_post = (req, res) => {
+  console.log(req.body.avatarUrl)
   if(req.body.avatarUrl) {
     const upload = new Upload({
       avatarUrl: req.body.avatarUrl
@@ -14,6 +15,7 @@ module.exports.upload_post = (req, res) => {
     upload.save()
     .then((result) => {
       console.log('uploaded');
+      res.rediect('/');
       })
     .catch(err => {
       console.log(err)
