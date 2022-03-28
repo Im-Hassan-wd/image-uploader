@@ -6,36 +6,14 @@
         <img src="/image.svg" alt="select preview">
       </div>
       <div class="small">Or</div>
-      <form action='/upload' method='POST' enctype='multipart/form-data' >
+      <form id="select" action='/upload' method='POST' enctype='multipart/form-data' >
         <div class="file">no file</div>
         <label>
           <input type="file" name="avatarUrl" required />
           choose a file
         </label>
+        <button>submit</button>
       </form>
     </div>
-
-    <script>
-      const select = document.querySelector('input[type="file"]');
-      const selectedFile = document.querySelector('.file');
-
-      select.addEventListener('change', async () => {
-        //  get the value
-        selectedFile.textContent = select.value.slice(12);
-        const avatarUrl = select.value.slice(12);
-
-        try {
-          const res = await fetch('/upload', {
-            method: 'POST',
-            body: avatarUrl,
-            headers: { 'Content-Type': 'application/json'}
-          });
-        }
-        catch(err) {
-          console.log(err);
-        }
-
-      })
-    </script>
 
 <%- include('./partials/head.ejs') %>
