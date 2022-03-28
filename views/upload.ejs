@@ -7,7 +7,7 @@
       </div>
       <div class="small">Or</div>
       <form action='/upload' method='POST' enctype='multipart/form-data' >
-        <div class="file"></div>
+        <div class="file">no file</div>
         <label>
           <input type="file" name="avatarUrl" required />
           choose a file
@@ -17,9 +17,10 @@
 
     <script>
       const select = document.querySelector('input[type="file"]');
+      const selectedFile = document.querySelector('.file');
 
       select.addEventListener('change', (e) => {
-        console.log(select.value);
+        selectedFile.textContent = select.value;
       })
     </script>
 
