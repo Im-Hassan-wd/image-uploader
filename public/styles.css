@@ -38,6 +38,7 @@ p {
 .image-preview {
   border: 1px dashed #97bef4;
   padding: 25px 15px;
+  background: #f6f8fb;
 }
 
 input[type="file"] {
