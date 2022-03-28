@@ -7,12 +7,20 @@
       </div>
       <div class="small">Or</div>
       <form action='/upload' method='POST' enctype='multipart/form-data' >
+        <div class="file"></div>
         <label>
           <input type="file" name="avatarUrl" required />
           choose a file
         </label>
-        <button>submit file</button>
       </form>
     </div>
+
+    <script>
+      const select = document.querySelector('input[type="file"]');
+
+      select.addEventListener('change', (e) => {
+        console.log(select.value);
+      })
+    </script>
 
 <%- include('./partials/head.ejs') %>
