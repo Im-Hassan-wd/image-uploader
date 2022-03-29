@@ -17,4 +17,14 @@
       </form>
     </div>
 
+    <script>
+      const input = document.querySelector('input');
+
+      input.addEventListener('change', (e) => {
+        e.preventDefault();
+
+        console.log(e);
+      })
+    </script>
+
 <%- include('./partials/head.ejs') %>
