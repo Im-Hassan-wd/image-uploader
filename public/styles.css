@@ -1,5 +1,5 @@
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;100&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -50,10 +50,16 @@ input[type="file"] {
   font-size: 13px;
 }
 
+.file {
+  font-weight: 300;
+  font-size: 15px;
+}
+
 label {
   background: #2f80ed;
   color: #fff;
   padding: 5px 10px;
   border-radius: 7px;
   cursor: pointer;
+  font-weight: 300;
 }

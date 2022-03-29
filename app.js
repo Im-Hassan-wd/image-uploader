@@ -5,6 +5,7 @@ const Uri = require('./dbURI/Uri');
 const uploadRoutes = require('./routes/uploadRoute');
 
 const app = express();
+app.listen(4002);
 
 // middleware
 app.use(express.static('public'));
@@ -17,7 +18,7 @@ app.set('view engine', 'ejs');
 // database connection
 const dbURI = Uri;
 mongoose.connect(dbURI)
-  .then((result) => app.listen(4002))
+  .then((result) => console.log('connect to db'))
   .catch((err) => console.log(err));
 
 // routes
