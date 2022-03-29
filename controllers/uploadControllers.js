@@ -11,10 +11,14 @@ module.exports.upload_post = async (req, res) => {
       avatarUrl: req.file.path
     })
   
-    res.send('uploading...')
-    const uploaded = await upload.save();
-    if(uploaded){
-      res.json('image has been uploaded');
+    try {
+
+    }
+    catch(err){
+      const uploaded = await upload.save(); 
+      if(uploaded) {
+        console.log('uploaded successfully');
+      }
     }
   }
 
