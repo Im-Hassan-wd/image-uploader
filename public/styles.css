@@ -56,11 +56,20 @@ input[type="file"] {
   margin: 5px 0;
 }
 
-label {
+label, button {
   background: #2f80ed;
   color: #fff;
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 7px;
   cursor: pointer;
   font-weight: 300;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 7px 10px;
+  margin-left: 10px;
+  border-radius: 0px;
+  background: #444;
 }
