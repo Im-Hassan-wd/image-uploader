@@ -6,20 +6,21 @@ module.exports.upload_get = (req, res) => {
 }
 
 module.exports.upload_post = async (req, res) => {
-  if(req.file.path) {
-    const upload = new Upload({
-      avatarUrl: req.file.path
-    })
+  console.log(req.file)
+  // if(req.file.path) {
+  //   const upload = new Upload({
+  //     avatarUrl: req.file.path
+  //   })
   
-    try {
+  //   try {
 
-    }
-    catch(err){
-      const uploaded = await upload.save(); 
-      if(uploaded) {
-        console.log('uploaded successfully');
-      }
-    }
-  }
+  //   }
+  //   catch(err){
+  //     const uploaded = await upload.save(); 
+  //     if(uploaded) {
+  //       console.log('uploaded successfully');
+  //     }
+  //   }
+  //}
 
 }
